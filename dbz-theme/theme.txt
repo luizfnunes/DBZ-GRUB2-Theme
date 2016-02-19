@@ -1,0 +1,55 @@
+#DBZ GRUB2 Theme
+#Created in 2016 by LuizFNunes
+
+title-text: ""
+title-color: "#B79600"
+desktop-image: "background.png"
+message-font: "Colophon DBZ"
+message-color: "#FFFFFF"
+message-bg-color: "#000000"
+terminal-font: "Colophon DBZ"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+
+
++ boot_menu {
+	left = 100%-500
+	width = 450
+	top = 50%-100
+	height = 200
+	item_font = "Colophon DBZ"
+	item_color = "#FFFFFF"
+	selected_item_font = "Colophon DBZ"
+	selected_item_color= "#B79600"
+	menu_pixmap_style= "menu_*.png"	
+	item_height = 26
+	item_padding = 0
+	item_icon_space = 0
+	item_spacing = 1
+	scrollbar = false
+}
+
++ circular_progress {
+        left = 100%-150
+        top = 100%-150
+        id = "__timeout__"
+        width = 150
+        height = 150
+        center_bitmap = "sphere.png"
+        tick_bitmap = "tick.png"
+        num_ticks = 7
+}
+
++ label {
+	width= 500
+	height = 50
+	top = 100%-50
+	left = 100%-650
+	text = @KEYMAP_SHORT@
+	color = "#FFFFFF"
+	align = "right"
+}
